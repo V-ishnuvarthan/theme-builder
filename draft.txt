@@ -1,0 +1,2 @@
+property preview connection
+mongodb+srv://admin:<password>@cluster0.2seut1a.mongodb.net/

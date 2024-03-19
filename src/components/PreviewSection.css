@@ -1,0 +1,14 @@
+.preview-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 1100px;
+  border: 1px solid #ddd;
+  border-color: black;
+  /* Add any other styles you need */
+}
+.preview-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 800px;
+  /* Add any other styles you need */
+}

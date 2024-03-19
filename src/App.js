@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
-import ColorPicker from './components/ColorPicker';
-import InputField from './components/InputField';
-import Slider from './components/Slider';
-import DropdownMenu from './components/DropdownMenu';
-import PreviewPane from './components/PreviewPane';
+import ComponentFactory from './components/ComponentFactory';
+import PreviewSection from './components/PreviewSection';
+import PropertiesSection from './components/PropertiesSection';
+import ComponentLibrary from './components/ComponentLibrary';
 
 function App() {
   const [themeSettings, setThemeSettings] = useState({});
@@ -28,23 +27,9 @@ function App() {
   return (
     <div className="App">
       <h1>Theme Builder Tool</h1>
-      <ColorPicker onChange={(color) => handleThemeChange({ color })} />
-      <InputField
-        label="Width"
-        onChange={(value) => handleThemeChange({ width: value })}
-      />
-      <Slider
-        label="Font Size"
-        min={10}
-        max={30}
-        onChange={(value) => handleThemeChange({ fontSize: value })}
-      />
-      <DropdownMenu
-        options={['Arial', 'Helvetica', 'Verdana']}
-        onChange={(option) => handleThemeChange({ fontFamily: option })}
-      />
-      <PreviewPane themeSettings={themeSettings} />
-      <button onClick={saveThemeSettings}>Save Theme Settings</button>
+      <div className="main-section">
+        <PreviewSection />
+      </div>
     </div>
   );
 }
