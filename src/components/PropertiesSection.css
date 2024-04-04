@@ -1,7 +1,43 @@
 .properties-section {
   background-color: #eef0f2;
   padding: 20px;
+  width: 350px;
   border: 1px solid #ddd;
   border-color: black;
-  /* Add any other styles you need */
+  align-items: flex-start;
+}
+
+.property {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.property label {
+  text-align: left;
+}
+
+.collapsible {
+  background-color: #f6c1c1;
+  color: #444;
+  cursor: pointer;
+  /* padding: 18px; */
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }

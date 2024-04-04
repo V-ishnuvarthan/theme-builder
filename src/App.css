@@ -17,5 +17,21 @@ h1 {
 
 button {
   display: block;
-  margin-top: 20px;
+  padding-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.heading {
+  text-align: left;
+  /* display: inline-block; */
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 70%;
+}
+.pagePreview {
+  padding-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
